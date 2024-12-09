@@ -1,0 +1,2018 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.archive.org/chauraph/dh2025/rdf/"
+     xml:base="https://purl.archive.org/chauraph/dh2025/rdf/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:aaao="https://ontology.swissartresearch.net/aaao/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:lrmoo="http://iflastandards.info/ns/lrm/lrmoo/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:crmdig="http://www.cidoc-crm.org/extensions/crmdig/"
+     xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
+     xmlns:crmtex="http://www.cidoc-crm.org/extensions/crmtex/"
+     xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/">
+    <owl:Ontology rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/">
+        <owl:imports rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crmtex/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object -->
+
+    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique -->
+
+    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique">
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R17 -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R17">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P11_had_participant -->
+
+    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P138i_has_representation -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P138i_has_representation"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by -->
+
+    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object -->
+
+    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique -->
+
+    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/O16_observed_value -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/O16_observed_value"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/O8_observed -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/O8_observed"/>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP100_challenged -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP100_challenged">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE53_Symbolic_Act"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP101_affirmed -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP101_affirmed">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE53_Symbolic_Act"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP103_ascribes_social_relation_target -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP103_ascribes_social_relation_target">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE55_Social_Relation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP104_ascribes_social_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP104_ascribes_social_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE55_Social_Relation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP105_has_social_relation_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP105_has_social_relation_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE55_Social_Relation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP10_ascribes_contact_point_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP10_ascribes_contact_point_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP7_ascribes_appellative_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP111_initiated -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP111_initiated">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP112_terminated -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP112_terminated">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP113_has_successor_status -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP113_has_successor_status">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP114_has_geographic_scope -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP114_has_geographic_scope">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP115_holds_over -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP115_holds_over">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE37_Population"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP116_ascribes_authority_status_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP116_ascribes_authority_status_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE50_Authority_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP117_generated_promise_to -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP117_generated_promise_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE46_Promisory_Agreement"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE36_Persons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP118_generated_promise_upon -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP118_generated_promise_upon">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE46_Promisory_Agreement"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP119_ascribes_event_location_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP119_ascribes_event_location_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE60_Evental_Locative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP11_has_classificatory_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP11_has_classificatory_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP120_has_event_location_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP120_has_event_location_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE60_Evental_Locative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP12_ascribes_classification -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP12_ascribes_classification">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP13_ascribes_classification_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP13_ascribes_classification_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP14_has_functional_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP14_has_functional_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP11_has_classificatory_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP15_ascribes_function -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP15_ascribes_function">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP12_ascribes_classification"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP16_ascribes_functional_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP16_ascribes_functional_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP13_ascribes_classification_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP17_has_social_status_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP17_has_social_status_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP11_has_classificatory_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP18_ascribes_social_status -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP18_ascribes_social_status">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP12_ascribes_classification"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP19_ascribes_social_status_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP19_ascribes_social_status_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP13_ascribes_classification_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP20_has_custodial_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP20_has_custodial_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP21_ascribes_custodian -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP21_ascribes_custodian">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP22_ascribes_custodial_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP22_ascribes_custodial_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP23_has_ownership_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP23_has_ownership_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP24_ascribes_owner -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP24_ascribes_owner">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP25_ascribes_ownership_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP25_ascribes_ownership_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP26_has_residence_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP26_has_residence_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP27_acribes_residence_place -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP27_acribes_residence_place">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP28_ascribes_residence_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP28_ascribes_residence_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP29_has_familial_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP29_has_familial_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP105_has_social_relation_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP30_ascribes_relative -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP30_ascribes_relative">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP103_ascribes_social_relation_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP31_ascribes_familial_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP31_ascribes_familial_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP104_ascribes_social_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP32_has_membership_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP32_has_membership_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP33_ascribes_group -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP33_ascribes_group">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP34_ascribes_membership_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP34_ascribes_membership_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP35_has_referential_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP35_has_referential_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP36_ascribes_referent -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP36_ascribes_referent">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP37_ascribes_referential_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP37_ascribes_referential_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP38_ascribes_referential_mode -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP38_ascribes_referential_mode">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP40_performed -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP40_performed">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE53_Symbolic_Act"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP41_uttered -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP41_uttered">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP42_intentionally_initiated -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP42_intentionally_initiated">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP111_initiated"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE52_Transformative_Symbolic_Act"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP43_has_similarity_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP43_has_similarity_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP44_ascribes_similarity_target -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP44_ascribes_similarity_target">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP45_ascribes_similarity_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP45_ascribes_similarity_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP46_ascribes_similarity_mode -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP46_ascribes_similarity_mode">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP47_has_set_belonging_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP47_has_set_belonging_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP48_ascribes_set -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP48_ascribes_set">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE24_Notional_Set"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP49_ascribes_set_belonging_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP49_ascribes_set_belonging_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP4_holds_for -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP4_holds_for">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP51_has_former_or_current_set_member -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP51_has_former_or_current_set_member">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE24_Notional_Set"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP52_intentionally_terminated -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP52_intentionally_terminated">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP112_terminated"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE52_Transformative_Symbolic_Act"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP54_ascribes_relative_date -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP54_ascribes_relative_date">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP55_has_dating_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP55_has_dating_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP56_ascribes_dating_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP56_ascribes_dating_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP57_has_obligation_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP57_has_obligation_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP89_has_promisory_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP58_ascribes_debtor -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP58_ascribes_debtor">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP87_ascribes_promisor"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP59_ascribes_obligation_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP59_ascribes_obligation_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP90_ascribes_promisory_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP5_has_appellative_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP5_has_appellative_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP60_ascribes_debtee -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP60_ascribes_debtee">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP86_ascribes_promissee"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP61_transferred_property_right_to -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP61_transferred_property_right_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP62_transferred_property_right_from -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP62_transferred_property_right_from">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP63_transferred_property_right_over -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP63_transferred_property_right_over">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP64_has_property_right_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP64_has_property_right_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP65_ascribes_property_right_holder -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP65_ascribes_property_right_holder">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP66_ascribes_property_right_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP66_ascribes_property_right_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP67_generated_obligation_upon -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP67_generated_obligation_upon">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP68_generated_obligation_to -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP68_generated_obligation_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP69_generated_obligation_of -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP69_generated_obligation_of">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP6_ascribes_appellation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP6_ascribes_appellation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP70_ascribes_social_status_in_relation_to -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP70_ascribes_social_status_in_relation_to">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP75_applies_for_context -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP75_applies_for_context">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP76_applies_for_context_type -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP76_applies_for_context_type">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP77_ascribes_place -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP77_ascribes_place">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP78_had_constituent -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP78_had_constituent">
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE37_Population"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE36_Persons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP79_had_population -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP79_had_population">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE38_Population_Existence"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE37_Population"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP7_ascribes_appellative_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP7_ascribes_appellative_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP83_has_physical_locative_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP83_has_physical_locative_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE43_Physical_Locative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP84_ascribes_location_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP84_ascribes_location_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE43_Physical_Locative_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP85_has_topographical_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP85_has_topographical_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE44_Topographical_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP86_ascribes_promissee -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP86_ascribes_promissee">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE36_Persons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP87_ascribes_promisor -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP87_ascribes_promisor">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP88_ascribes_topographical_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP88_ascribes_topographical_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE44_Topographical_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP89_has_promisory_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP89_has_promisory_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE59_Plan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP8_has_contact_point_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP8_has_contact_point_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP5_has_appellative_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP90_ascribes_promisory_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP90_ascribes_promisory_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP91_generated_promise_of -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP91_generated_promise_of">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE46_Promisory_Agreement"/>
+        <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE59_Plan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP93_has_text_sequence_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP93_has_text_sequence_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE49_Text_Sequence_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crmtex/TX4_Writing_Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP94_ascribes_text_sequence_correlate -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP94_ascribes_text_sequence_correlate">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE49_Text_Sequence_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crmtex/TX4_Writing_Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP95_ascribes_text_sequence_relation -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP95_ascribes_text_sequence_relation">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3_ascribes_intentional_relation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE49_Text_Sequence_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP96_has_authority_status_subject -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP96_has_authority_status_subject">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1_has_intentional_subject"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE50_Authority_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP97_ascribes_authority_status -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP97_ascribes_authority_status">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2_ascribes_intentional_target"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE50_Authority_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZP9_ascribes_contact_point -->
+
+    <owl:ObjectProperty rdf:about="https://ontology.swissartresearch.net/aaao/ZP9_ascribes_contact_point">
+        <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP6_ascribes_appellation"/>
+        <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F2 -->
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F28 -->
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E21_Person -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E41_Appellation -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E42_Identifier -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E4_Period -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E54_Dimension -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E5_Event -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E66_Formation -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E66_Formation"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E70_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E74_Group -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E7_Activity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E85_Joining -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E85_Joining"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E86_Leaving -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmtex/TX4_Writing_Field -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmtex/TX4_Writing_Field"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmtex/TX5_Text_Recognition -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmtex/TX5_Text_Recognition"/>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event"/>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE10_Family_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE55_Social_Relation_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE52_Transformative_Symbolic_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE15_Set_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE17_Digital_Reading -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE17_Digital_Reading">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmtex/TX5_Text_Recognition"/>
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D7_Digital_Machine_Event"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE18_Critical_Reading -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE18_Critical_Reading">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE19_Naming -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE19_Naming">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE20_Declarative_Acquisition -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE20_Declarative_Acquisition">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE21_Declarative_Transfer_of_Custody -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE21_Declarative_Transfer_of_Custody">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE22_Declarative_Joining -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE22_Declarative_Joining">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E85_Joining"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE23_Declarative_Leaving -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE23_Declarative_Leaving">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E86_Leaving"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE24_Notional_Set -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE24_Notional_Set">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE26_Dating_Declaration -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE26_Dating_Declaration">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE46_Promisory_Agreement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE33_Declarative_Formation -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE33_Declarative_Formation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E66_Formation"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE34_Declarative_Dissolution -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE34_Declarative_Dissolution">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE36_Persons -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE36_Persons">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE37_Population -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE37_Population">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE36_Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE38_Population_Existence -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE38_Population_Existence">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE39_Polity -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE39_Polity">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE37_Population"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE43_Physical_Locative_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE43_Physical_Locative_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE44_Topographical_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE44_Topographical_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE45_Promisory_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE46_Promisory_Agreement -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE46_Promisory_Agreement">
+        <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE49_Text_Sequence_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE49_Text_Sequence_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE50_Authority_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE50_Authority_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE52_Transformative_Symbolic_Act -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE52_Transformative_Symbolic_Act">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE53_Symbolic_Act"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE53_Symbolic_Act -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE53_Symbolic_Act">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE55_Social_Relation_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE55_Social_Relation_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE59_Plan -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE59_Plan">
+        <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE5_Function_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE60_Evental_Locative_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE60_Evental_Locative_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE6_Social_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status -->
+
+    <owl:Class rdf:about="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status">
+        <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Representation_Description -->
+
+    <owl:Class rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Representation_Description">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S4_Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://iconclass.org/32B33(TURKS) -->
+
+    <owl:NamedIndividual rdf:about="https://iconclass.org/32B33(TURKS)">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label>iconclass:32B33(TURKS)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Appropriated -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Appropriated">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Attribute_Assignment_1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Attribute_Assignment_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_(visual_trope)"/>
+        <cidoc-crm:P141_assigned rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom"/>
+        <cidoc-crm:P16_used_specific_object rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Fanny_Caroff,_L’Ost_des_Sarrasins._Les_Musulmans_dans_l’iconographie_médiévale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Attribute_Assignment_2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Attribute_Assignment_2">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West"/>
+        <cidoc-crm:P141_assigned rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West_(Charles_the_Bold)_as_the_enemy_of_the_Swiss_Confederacy"/>
+        <cidoc-crm:P16_used_specific_object rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Claudius_Sieber-_Lehmann,_Bourgogne,_guerres_de"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Charles_the_Bold -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Charles_the_Bold">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+        <skos:exactMatch rdf:resource="https://viaf.org/viaf/84075206/"/>
+        <rdfs:label>Charles the Bold</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Creation_of_the_Murten_Panorama -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Creation_of_the_Murten_Panorama">
+        <rdf:type rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+        <aaao:ZP101_affirmed rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_as_the_symbol_of_the_enemy_of_the_Swiss_Confederacy"/>
+        <aaao:ZP41_uttered rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Crusades -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Crusades">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/European_Christian -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/European_Christian">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+        <rdfs:comment>European Christian</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
+        <cidoc-crm:P138i_has_representation rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_Representation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_POI -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_POI">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D35_Area"/>
+        <rdfs:comment rdf:resource="https://raw.githubusercontent.com/chauraph/dh2025/main/poi.jpg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_Representation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_Representation">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+        <cidoc-crm:P106_is_composed_of rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_POI"/>
+        <rdfs:comment rdf:resource="https://raw.githubusercontent.com/chauraph/dh2025/main/main_repr.jpg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Observation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Observation">
+        <rdf:type rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Representation_Description"/>
+        <crmsci:O16_observed_value rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_(visual_trope)"/>
+        <crmsci:O8_observed rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Murten_Panorama_POI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Ottoman_wars_in_Europe -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Ottoman_wars_in_Europe">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <aaao:ZP75_applies_for_context rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Ottoman_wars_in_Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom">
+        <rdf:type rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <aaao:ZP35_has_referential_subject rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_(visual_trope)"/>
+        <aaao:ZP36_ascribes_referent rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/The_Enemy"/>
+        <aaao:ZP4_holds_for rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/European_Christian"/>
+        <aaao:ZP75_applies_for_context rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Crusades"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/The_Enemy -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/The_Enemy">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:label>The Enemy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:label>Turk of the West</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom">
+        <rdf:type rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <aaao:ZP113_has_successor_status rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom"/>
+        <aaao:ZP35_has_referential_subject rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_(visual_trope)"/>
+        <aaao:ZP36_ascribes_referent rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/The_Enemy"/>
+        <aaao:ZP4_holds_for rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/European_Christian"/>
+        <aaao:ZP75_applies_for_context rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Ottoman_wars_in_Europe"/>
+        <rdfs:comment>Turkish Warrior as the symbol of the enemy of the Christendom</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_as_the_symbol_of_the_enemy_of_the_Swiss_Confederacy -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_as_the_symbol_of_the_enemy_of_the_Swiss_Confederacy">
+        <rdf:type rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <aaao:ZP113_has_successor_status rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West_(Charles_the_Bold)_as_the_enemy_of_the_Swiss_Confederacy"/>
+        <aaao:ZP35_has_referential_subject rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_(visual_trope)"/>
+        <aaao:ZP36_ascribes_referent rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/The_Enemy"/>
+        <aaao:ZP38_ascribes_referential_mode rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Appropriated"/>
+        <aaao:ZP4_holds_for rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/19th_c._Swiss"/>
+        <aaao:ZP75_applies_for_context rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Creation_of_the_Murten_Panorama"/>
+        <rdfs:label>Turkish Warrior as the symbol of the enemy of the Swiss Confederacy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/15th_c._Swiss -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/15th_c._Swiss">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/19th_c._Swiss -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/19th_c._Swiss">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Burgundian_War_(1474-1477) -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Burgundian_War_(1474-1477)">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:comment>Burgundian War (1474-1477)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Claudius_Sieber-_Lehmann,_Bourgogne,_guerres_de -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Claudius_Sieber-_Lehmann,_Bourgogne,_guerres_de">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment>Claudius Sieber- Lehmann, &quot;Bourgogne, guerres de&quot;, in: Dictionnaire historique de la Suisse (DHS)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Fanny_Caroff,_L’Ost_des_Sarrasins._Les_Musulmans_dans_l’iconographie_médiévale -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Fanny_Caroff,_L’Ost_des_Sarrasins._Les_Musulmans_dans_l’iconographie_médiévale">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment>Fanny Caroff, L’Ost des Sarrasins. Les Musulmans dans l’iconographie médiévale (France-Flandre XIIIe- XVe siècle)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_(visual_trope) -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Saracen_Warrior_(visual_trope)">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <skos:broadMatch rdf:resource="https://www.wikidata.org/entity/Q105763"/>
+        <rdfs:comment>Saracen Warrior (visual trope)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West_(Charles_the_Bold)_as_the_enemy_of_the_Swiss_Confederacy -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West_(Charles_the_Bold)_as_the_enemy_of_the_Swiss_Confederacy">
+        <rdf:type rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+        <aaao:ZP113_has_successor_status rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_as_the_symbol_of_the_enemy_of_the_Christendom"/>
+        <aaao:ZP35_has_referential_subject rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Turk_of_the_West"/>
+        <aaao:ZP36_ascribes_referent rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Charles_the_Bold"/>
+        <aaao:ZP36_ascribes_referent rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/The_Enemy"/>
+        <aaao:ZP38_ascribes_referential_mode rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Appropriated"/>
+        <aaao:ZP4_holds_for rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/15th_c._Swiss"/>
+        <aaao:ZP75_applies_for_context rdf:resource="https://purl.archive.org/chauraph/dh2025/rdf/Burgundian_War_(1474-1477)"/>
+        <rdfs:label>Turk of the West (Charles the Bold) as the enemy of the Swiss Confederacy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_(visual_trope) -->
+
+    <owl:NamedIndividual rdf:about="https://purl.archive.org/chauraph/dh2025/rdf/Turkish_Warrior_(visual_trope)">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <skos:broadMatch rdf:resource="https://iconclass.org/32B33(TURKS)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://viaf.org/viaf/84075206/ -->
+
+    <owl:NamedIndividual rdf:about="https://viaf.org/viaf/84075206/">
+        <rdfs:label>viaf:84075206</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q105763 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q105763">
+        <rdfs:comment>wd:Q105763</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
